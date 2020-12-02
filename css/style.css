@@ -52,6 +52,39 @@ ul {
   /* altezza 120px */
 }
 
+.nav_bar_top .top .logo svg{
+  width: 130px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.nav_bar_top .top .menu svg{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.nav_bar_top .top .menu li{
+  margin-bottom: 15px;
+}
+
+.nav_bar_top .top .menu li:first-child {
+  position: relative;
+}
+
+.nav_bar_top .top .menu li:first-child::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 2.5px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #a4eb34;
+}
+
 .nav_bar_top .middle {
   height: calc(100% - 160px);
   background-color: yellow;
