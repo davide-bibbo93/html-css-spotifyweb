@@ -1,5 +1,85 @@
+/* common settings */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+/* fine common settings */
+/* inizio header */
+.header {
+  float: left;
+  width: 230px;
+  height: calc(100vh - 90px);
+  background-color: blue;
+}
+
+.nav_bar_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+
+.nav_bar_top .top {
+  background-color: lime;
+}
+
+.nav_bar_top .middle {
+  flex-grow: 2;
+  background-color: yellow;
+}
+
+.playlist {
+  /* overflow-y: scroll; */
+}
+
+.nav_bar_top .bottom {
+  background-color: green;
+}
+/* fine header */
+
+/* inizio main */
+.main {
+  display: flex;
+  height: calc(100vh - 90px);
+  padding: 10px;
+  background-color: pink;
+}
+
+.upgrade {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 230px);
+  height: 80px;
+  background-color: green;
+}
+
+.btn_upgrade {
+
+}
+
+.box_main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+  background-color: brown;
+  overflow-y: scroll;
+}
+/* fine main */
+/* inizio footer */
+.nav_bar_bottom {
+  height: 90px;
+  background-color: red;
+}
+/* fine footer */
