@@ -9,14 +9,14 @@ body {
   min-width: 300px;
   min-height: 100px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 ul {
   list-style: none;
 }
 
-a {
+h1, h2, h3, h4, a {
   text-decoration: none;
   color: #b3b3b3;
 }
@@ -28,21 +28,13 @@ a {
 }
 
 .clearfix::after {
-  content: ‘’;
+  content: '';
   display: table;
   clear: both;
 }
 
 .white {
   color: #fff;
-}
-
-.grey {
-  color: #b3b3b3;
-}
-
-.btn {
-  padding: 10px 20px;
 }
 /* fine common settings */
 /* inizio common settings header */
@@ -59,35 +51,33 @@ a {
   background-color: #000;
 }
 
-.nav_bar_top .top a,
-.nav_bar_top .middle a {
+.nav_bar_top a {
   display: block;
-  font-size: 14px;
 }
 
 .nav_bar_top .top .menu svg,
-.nav_bar_top .middle .playlist svg {
+.nav_bar_top .middle .playlist svg,
+.nav_bar_top .bottom .btn_install svg {
   margin-right: 10px;
   vertical-align: middle;
   fill: #b3b3b3;
 }
 
-.nav_bar_top .top .menu li:hover a,
-.nav_bar_top .top .menu li:hover svg,
-.nav_bar_top .middle .playlist li:hover a,
-.nav_bar_top .middle .playlist li:hover svg,
+.nav_bar_top li:hover a,
+.nav_bar_top li:hover svg,
+.nav_bar_top .middle .btn_playlist:hover span,
 .nav_bar_top .bottom .btn_install:hover svg,
 .nav_bar_top .bottom .btn_install:hover span {
   color: #fff;
   fill: #fff;
 }
+
+.nav_bar_top .middle .btn_playlist:hover .plus{
+  background-color: #fff;
+}
 /* fine common settings header */
 
 /* inizio navbar top top */
-.nav_bar_top .top .logo_link {
-  display: block;
-}
-
 .nav_bar_top .top .logo {
   width: 130px;
   height: 40px;
@@ -131,16 +121,7 @@ a {
 }
 
 .nav_bar_top .middle .btn_playlist {
-  display: block;
   margin: 15px 0;
-}
-
-.nav_bar_top .middle .btn_playlist:hover .plus {
-  background-color: #fff;
-}
-
-.nav_bar_top .middle .btn_playlist:hover span {
-  color: #fff;
 }
 
 .nav_bar_top .middle .plus {
@@ -163,30 +144,20 @@ a {
 
 /* inizio navbar top bottom */
 .nav_bar_top .bottom .btn_install {
-  display: block;
   padding: 10px 0;
   border-bottom: 1px solid #fff;
 }
 
 .nav_bar_top .bottom .download {
   width: 20px;
-  margin-right: 10px;
-  fill: #b3b3b3;
-  vertical-align: middle;
-}
-
-.nav_bar_top .bottom .btn_install span {
-  font-size: 14px;
 }
 
 .nav_bar_top .bottom .btn_profile {
-  display: block;
   margin-top: 15px;
 }
 
 .nav_bar_top .bottom .btn_profile span {
   color: #fff;
-  font-size: 14px;
   font-weight: 700;
 }
 
@@ -286,7 +257,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   content: '';
   background-color: rgba(76, 76, 76, 0.3);
   display: none;
@@ -309,10 +279,11 @@ a {
 
 .main .box_main .recently_played .box_music::after{
   position: absolute;
-  top: 36%;
-  left: 52%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  content: '\f144';
+  content: '\f01d';
+  font-family: "Font-Awesome 4.7";
   font-size: 40px;
   display: none;
   font-weight: 900;
@@ -336,6 +307,7 @@ a {
 .main .box_main h3{
   color: #fff;
   font-size: 14px;
+  margin: 5px 0;
 }
 
 .main .box_main h4{
@@ -366,7 +338,13 @@ a {
     padding: 5px;
   }
 
-  .nav_bar_top .top .logo {
+  .nav_bar_top .top .logo,
+  .nav_bar_top .top .menu span,
+  .nav_bar_top .middle .white,
+  .nav_bar_top .middle .btn_playlist,
+  .nav_bar_top .middle .playlist,
+  .nav_bar_top .bottom .btn_install span,
+  .nav_bar_top .bottom .btn_profile span {
     display: none;
   }
 
@@ -382,19 +360,9 @@ a {
     margin-right: 0;
   }
 
-  .nav_bar_top .top .menu span {
-    display: none;
-  }
-
   .nav_bar_top .middle {
     /* .top 171px + .top li 20px + .bottom 77.719px + .bottom img 15px; */
     height: calc(100% - 283.719px);
-  }
-
-  .nav_bar_top .middle .white,
-  .nav_bar_top .middle .btn_playlist,
-  .nav_bar_top .middle .playlist {
-    display: none;
   }
 
   .nav_bar_top .bottom .btn_install {
@@ -408,11 +376,6 @@ a {
   .nav_bar_top .bottom .btn_install .download,
   .nav_bar_top .bottom .btn_profile img {
     margin-right: 0;
-  }
-
-  .nav_bar_top .bottom .btn_install span,
-  .nav_bar_top .bottom .btn_profile span {
-    display: none;
   }
 
   .main {
