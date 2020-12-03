@@ -204,23 +204,23 @@ a {
   width: calc(100% - 230px);
   height: 100%;
   padding: 10px;
-  background-color: pink;
   overflow-y: scroll;
+  background-color: #141922;
 }
 
-.upgrade {
+.main .upgrade {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 230px);
   height: 80px;
-  background-color: #141922;
+  background-color: rgba(8, 11, 18, 0.5);
+  z-index: 3;
 }
 
-.btn_upgrade {
+.main .btn_upgrade {
   margin-right: 20px;
   border: 1px solid #fff;
   border-radius: 20px;
@@ -229,18 +229,27 @@ a {
   font-size: 14px;
 }
 
-.btn_upgrade:hover {
+.main .btn_upgrade:hover {
   transform: scale(1.05);
 }
 
-.box_main {
+.main .box_main {
   width: 100%;
   margin-top: 80px;
 }
+
+.main .box_main h2{
+  color: #fff;
+  margin: 10px;
+  font-size: 28px;
+}
+
+
 /* fine main */
 /* inizio footer */
 .footer {
   background-color: #282828;
+  z-index: 2;
 }
 
 .nav_bar_bottom {
@@ -313,6 +322,12 @@ a {
 
   .upgrade {
     width: calc(100% - 60px);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .upgrade {
+    width: calc(100% - 230px);
   }
 }
 /* fine MEDIAQUERY */
