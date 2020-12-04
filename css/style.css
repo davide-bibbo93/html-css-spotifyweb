@@ -385,6 +385,61 @@ h1, h2, h3, h4, a {
   height: 40%;
   align-items: baseline;
 }
+
+.nav_bar_bottom .center .bottom span{
+  color: #fff;
+  font-size: 12px;
+  margin: 0 30px;
+}
+
+.nav_bar_bottom .center .bottom .bar{
+  width: 50%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(56, 56, 56);
+  position: relative;
+}
+
+.nav_bar_bottom .center .bottom .bar::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(170, 170, 170);
+  width: 10%;
+  height: 4px;
+  content: '';
+  border-radius: 2px;
+}
+
+.nav_bar_bottom .dx{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.nav_bar_bottom .dx a {
+  margin: 0 10px;
+}
+
+.nav_bar_bottom .dx .bar{
+  width: 30%;
+  height: 4px;
+  background-color: rgb(56, 56, 56);
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav_bar_bottom .dx .bar::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 4px;
+  background-color: rgb(170, 170, 170);
+  content: '';
+  border-radius: 2px;
+}
 /* fine footer */
 /* inizio MEDIAQUERY */
 @media screen and (max-width: 575px) {
