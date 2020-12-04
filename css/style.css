@@ -562,9 +562,21 @@ h1, h2, h3, h4, a {
     margin: 0 10px;
   }
 
-  .nav_bar_bottom .sx .heart,
+  .nav_bar_bottom .sx .heart{
+    margin-right: 50px;
+  }
+
   .nav_bar_bottom .sx .folder{
-    
+    display: none;
+  }
+
+  .nav_bar_bottom .dx .fa-desktop{
+    display: none;
+  }
+
+  .nav_bar_bottom .dx .fa-volume-up,
+  .nav_bar_bottom .dx .bar{
+    display: none;
   }
 }
 
