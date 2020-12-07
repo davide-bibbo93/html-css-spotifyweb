@@ -7,7 +7,7 @@
 
 body {
   min-width: 550px;
-  min-height: 9px;
+  min-height: 90px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
@@ -36,10 +36,22 @@ h1, h2, h3, h4, a {
 .white {
   color: #fff;
 }
+
+.fl-left{
+  float: left;
+}
+
+.nav_bar_top .top .menu li:first-child::before,
+.main .box_main .nav_bar_main li:first-child::after{
+  background-color: #a4eb34;
+}
+
+.main .upgrade, .nav_bar_bottom{
+  height: 90px;
+}
 /* fine common settings */
 /* inizio common settings header */
 .header {
-  float: left;
   width: 230px;
   height: 100%;
 }
@@ -112,7 +124,6 @@ h1, h2, h3, h4, a {
   transform: translateY(-50%);
   width: 3px;
   height: 32px;
-  background-color: #a4eb34;
 }
 /* fine navbar top top */
 
@@ -172,7 +183,6 @@ h1, h2, h3, h4, a {
 
 /* inizio main */
 .main {
-  float: left;
   width: calc(100% - 230px);
   height: 100%;
   padding: 10px;
@@ -187,7 +197,6 @@ h1, h2, h3, h4, a {
   position: fixed;
   top: 0;
   right: 0;
-  height: 80px;
   background-color: rgba(8, 11, 18, 0.5);
   z-index: 1;
 }
@@ -234,7 +243,6 @@ h1, h2, h3, h4, a {
   transform: translateX(-50%);
   width: 32px;
   height: 3px;
-  background-color: #a4eb34;
 }
 
 .main .box_main .nav_bar_main a:hover{
@@ -310,7 +318,6 @@ h1, h2, h3, h4, a {
 }
 
 .nav_bar_bottom {
-  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
