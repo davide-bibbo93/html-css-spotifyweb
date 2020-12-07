@@ -349,12 +349,14 @@ h1, h2, h3, h4, a {
 }
 
 .nav_bar_bottom .sx .heart,
-.nav_bar_bottom .sx .folder{
+.nav_bar_bottom .sx .folder,
+.nav_bar_bottom .dx a{
   margin: 0 10px;
 }
 
 .nav_bar_bottom .sx .heart:hover,
-.nav_bar_bottom .sx .folder:hover{
+.nav_bar_bottom .sx .folder:hover,
+.nav_bar_bottom .dx a:hover{
   color: #fff;
 }
 
@@ -450,16 +452,8 @@ h1, h2, h3, h4, a {
   margin-right: 10px;
 }
 
-.nav_bar_bottom .dx a {
-  margin: 0 10px;
-}
-
 .nav_bar_bottom .dx a:nth-child(3){
   margin-right: 20px;
-}
-
-.nav_bar_bottom .dx a:hover {
-  color: #fff;
 }
 
 .nav_bar_bottom .dx .bar{
